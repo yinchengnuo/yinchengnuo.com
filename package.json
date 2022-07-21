@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "dev": "vitepress dev --host",
-    "build": "vitepress build index"
+    "build": "vitepress build"
   },
   "devDependencies": {
     "@types/node": "^18.0.6",

@@ -2,7 +2,7 @@
  * @Author: 尹成诺
  * @Date: 2022-07-11 17:03:09
  * @LastEditors: 尹成诺
- * @LastEditTime: 2022-07-21 23:56:35
+ * @LastEditTime: 2022-07-22 00:22:10
  * @Description: file content
  */
 // import nav from "./nav";
@@ -35,8 +35,6 @@ links.forEach((link: string) => {
 Object.entries(sidebar).forEach(([key, value]: [string, DefaultTheme.SidebarGroup[]]) => {
   nav.push({ text: key.split("_")[1].replace("/", ""), items: value.map((e) => ({ text: e.text || "-", link: e.items[0].link })) });
 });
-
-console.log(JSON.stringify(nav));
 
 export default defineConfig({
   lang: "zh", // 中文网站
