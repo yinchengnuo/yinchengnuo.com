@@ -2,7 +2,7 @@
  * @Author: 尹成诺
  * @Date: 2022-07-11 17:03:09
  * @LastEditors: 尹成诺
- * @LastEditTime: 2022-07-21 16:25:07
+ * @LastEditTime: 2022-07-21 23:56:35
  * @Description: file content
  */
 // import nav from "./nav";
@@ -49,9 +49,14 @@ export default defineConfig({
   },
   themeConfig: {
     outlineTitle: "文档大纲",
-    footer: {
-      message: "Released under the MIT License.",
-      copyright: "Copyright © 2019-present Evan You",
+    lastUpdatedText: "最近更新时间：",
+    // footer: {
+    //   message: "Released under the MIT License.",
+    //   copyright: "Copyright © 20229-present YinChengnuo",
+    // },
+    editLink: {
+      pattern: "https://github.com/yinchengnuo/yinchengnuo.com/blob/master/:path",
+      text: "在 GitHub 上编辑此页面",
     },
     socialLinks: [{ icon: "github", link: "https://github.com/yinchengnuo" }],
     nav: [
