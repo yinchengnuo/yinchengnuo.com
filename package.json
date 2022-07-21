@@ -1,0 +1,23 @@
+{
+  "name": "yinchengnuo.com",
+  "version": "1.0.0",
+  "description": "个人网站",
+  "main": "index.js",
+  "repository": "https://github.com/yinchengnuo/yinchengnuo.com",
+  "author": "yinchengnuo",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev --host",
+    "build": "vitepress build index"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.6",
+    "glob": "^8.0.3",
+    "vitepress": "^1.0.0-alpha.4",
+    "vue": "^3.2.37"
+  },
+  "prettier": {
+    "printWidth": 300
+  }
+}
