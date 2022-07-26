@@ -2,7 +2,7 @@
  * @Author: 尹成诺
  * @Date: 2022-07-11 17:03:09
  * @LastEditors: 尹成诺
- * @LastEditTime: 2022-07-22 00:22:10
+ * @LastEditTime: 2022-07-25 23:42:43
  * @Description: file content
  */
 // import nav from "./nav";
@@ -33,7 +33,7 @@ links.forEach((link: string) => {
 });
 
 Object.entries(sidebar).forEach(([key, value]: [string, DefaultTheme.SidebarGroup[]]) => {
-  nav.push({ text: key.split("_")[1].replace("/", ""), items: value.map((e) => ({ text: e.text || "-", link: e.items[0].link })) });
+  nav.push({ text: key.split("_")[1].replace("/", ""), items: value.map((e) => ({ text: e.text || "-", link: e.items[0].link })), activeMatch: `^${key}` });
 });
 
 export default defineConfig({
@@ -47,11 +47,7 @@ export default defineConfig({
   },
   themeConfig: {
     outlineTitle: "文档大纲",
-    lastUpdatedText: "最近更新时间：",
-    // footer: {
-    //   message: "Released under the MIT License.",
-    //   copyright: "Copyright © 20229-present YinChengnuo",
-    // },
+    lastUpdatedText: "最近更新时间",
     editLink: {
       pattern: "https://github.com/yinchengnuo/yinchengnuo.com/blob/master/:path",
       text: "在 GitHub 上编辑此页面",
@@ -60,11 +56,8 @@ export default defineConfig({
     nav: [
       {
         text: "我的应用",
-        items: [
-          { text: "滚动君小程序", link: "/我的应用/滚动君小程序/index" },
-          { text: "富聊直播H5", link: "/item-2" },
-          { text: "青柠直播小程序", link: "/item-3" },
-        ],
+        activeMatch: "^/00_我的应用/",
+        items: [{ text: "滚动君小程序", link: "/00_我的应用/滚动君小程序/index.md" }],
       },
       ...nav,
       {
@@ -80,8 +73,8 @@ export default defineConfig({
       {
         text: "文档",
         items: [
-          { text: "vue", link: "https://v3.cn.vuejs.org/" },
           { text: "vite", link: "https://vitejs.cn/" },
+          { text: "vue", link: "https://v3.cn.vuejs.org/" },
           { text: "localhost https 证书", link: "https://letsencrypt.org/zh-cn/docs/certificates-for-localhost/" },
         ],
       },
