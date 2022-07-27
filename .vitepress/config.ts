@@ -2,7 +2,7 @@
  * @Author: 尹成诺
  * @Date: 2022-07-11 17:03:09
  * @LastEditors: 尹成诺
- * @LastEditTime: 2022-07-25 23:42:43
+ * @LastEditTime: 2022-07-27 19:12:00
  * @Description: file content
  */
 // import nav from "./nav";
@@ -75,6 +75,9 @@ export default defineConfig({
         items: [
           { text: "vite", link: "https://vitejs.cn/" },
           { text: "vue", link: "https://v3.cn.vuejs.org/" },
+          { text: "jenkins", link: "https://www.jenkins.io/zh/doc/" },
+          { text: "vitepress", link: "https://vitepress.vuejs.org/" },
+          { text: "markdown", link: "https://www.runoob.com/markdown/md-tutorial.html" },
           { text: "localhost https 证书", link: "https://letsencrypt.org/zh-cn/docs/certificates-for-localhost/" },
         ],
       },
