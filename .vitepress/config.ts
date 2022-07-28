@@ -2,7 +2,7 @@
  * @Author: 尹成诺
  * @Date: 2022-07-11 17:03:09
  * @LastEditors: 尹成诺
- * @LastEditTime: 2022-07-27 19:24:51
+ * @LastEditTime: 2022-07-28 11:48:10
  * @Description: file content
  */
 // import nav from "./nav";
@@ -55,10 +55,15 @@ export default defineConfig({
     socialLinks: [{ icon: "github", link: "https://github.com/yinchengnuo" }],
     nav: [
       {
+        link: "/",
+        text: "首页",
+        activeMatch: "^/$",
+      },
+      {
         text: "我的应用",
         activeMatch: "^/00_我的应用/",
         items: [
-          { text: "滚动君小程序", link: "/00_我的应用/滚动君小程序/index.md" },
+          { text: "滚动君小程序", link: "/00_我的应用/01_滚动君小程序/index.md" },
           { text: "青柠直播微信小程序", link: "/00_我的应用/02_青柠直播微信小程序/index.md" },
         ],
       },

@@ -7,8 +7,8 @@ hero:
   tagline: 羁鸟恋旧林，池鱼思故渊。开荒南野际，守拙归园田。
   actions:
     - theme: brand
-      text: 欢迎
-      link: /
+      text: GitHub
+      link: https://github.com/yinchengnuo
     - theme: alt
       text: 开源地址
       link: https://github.com/yinchengnuo/yinchengnuo.com
@@ -43,13 +43,4 @@ features:
     details: 久在樊笼里，复得返自然。
 ---
 
-<!-- <script setup>
-import { useData } from 'vitepress'
-
-const { page } = useData()
-</script>
-
-  <h1 class="test" style="background: red">123123</h1>
-
-  -->
-  <iframe src="pages/fly/index.html" frameborder="0" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1;" /> 
+<iframe src="pages/fly/index.html" frameborder="0" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1;" />
