@@ -2,7 +2,7 @@
  * @Author: 尹成诺
  * @Date: 2022-07-11 17:03:09
  * @LastEditors: 尹成诺
- * @LastEditTime: 2022-07-27 19:12:00
+ * @LastEditTime: 2022-07-27 19:24:51
  * @Description: file content
  */
 // import nav from "./nav";
@@ -57,7 +57,10 @@ export default defineConfig({
       {
         text: "我的应用",
         activeMatch: "^/00_我的应用/",
-        items: [{ text: "滚动君小程序", link: "/00_我的应用/滚动君小程序/index.md" }],
+        items: [
+          { text: "滚动君小程序", link: "/00_我的应用/滚动君小程序/index.md" },
+          { text: "青柠直播微信小程序", link: "/00_我的应用/02_青柠直播微信小程序/index.md" },
+        ],
       },
       ...nav,
       {
@@ -75,6 +78,7 @@ export default defineConfig({
         items: [
           { text: "vite", link: "https://vitejs.cn/" },
           { text: "vue", link: "https://v3.cn.vuejs.org/" },
+          { text: "nginx", link: "https://www.nginx.cn/doc/" },
           { text: "jenkins", link: "https://www.jenkins.io/zh/doc/" },
           { text: "vitepress", link: "https://vitepress.vuejs.org/" },
           { text: "markdown", link: "https://www.runoob.com/markdown/md-tutorial.html" },
