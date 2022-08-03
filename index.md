@@ -16,10 +16,10 @@ hero:
       link: https://github.com/yinchengnuo/yinchengnuo.com
     - theme: alt
       text: GitLab
-      link: https://gitlab.yinchengnuo.com/
+      link: https://gitlab.yinchengnuo.com/yinchengnuo.com/yinchengnuo.com
     - theme: alt
       text: Jenkins
-      link: https://jenkins.yinchengnuo.com/
+      link: https://jenkins.yinchengnuo.com
     - theme: alt
       text: RabbitMQ
       link: /
