@@ -9,10 +9,10 @@ hero:
   tagline: 羁鸟恋旧林，池鱼思故渊。开荒南野际，守拙归园田。
   actions:
     - theme: brand
-      text: GitHub
+      text: Me
       link: https://github.com/yinchengnuo
     - theme: alt
-      text: 开源地址
+      text: github
       link: https://github.com/yinchengnuo/yinchengnuo.com
     - theme: alt
       text: GitLab

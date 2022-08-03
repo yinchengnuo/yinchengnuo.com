@@ -1,3 +1,7 @@
+# Javascript中的super
+
+----
+
 提到 ES6，就绕不开 class，而作为 ES5 function 的语法糖，ES6 在语言标准层面实现了 Javascript 对象模版。
 
 基本上，ES6 的 class 可以看作只是一个语法糖，它的绝大部分功能，ES5 都可以做到，新的 class 写法只是让对象原型的写法更加清晰、更像面向对象编程的语法而已。
