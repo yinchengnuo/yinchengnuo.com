@@ -2,7 +2,7 @@
  * @Author: 尹成诺
  * @Date: 2022-07-11 17:03:09
  * @LastEditors: 尹成诺
- * @LastEditTime: 2022-08-02 15:24:55
+ * @LastEditTime: 2022-08-03 18:16:07
  * @Description: file content
  */
 // import nav from "./nav";
@@ -39,13 +39,14 @@ Object.entries(sidebar).forEach(([key, value]: [string, DefaultTheme.SidebarGrou
 export default defineConfig({
   lang: "zh", // 中文网站
   lastUpdated: true, // 显示上次更新时间
-  title: "小楼昨夜听风雨", // 网站名称
+  title: "南山小站", // 网站名称
   description: "尹成诺的个人网站", // meta
   // markdwon 配置
   markdown: {
     lineNumbers: true, // 代码显示行号
   },
   themeConfig: {
+    siteTitle: "小楼昨夜听风雨",
     outlineTitle: "文档大纲",
     lastUpdatedText: "最近更新时间",
     editLink: {

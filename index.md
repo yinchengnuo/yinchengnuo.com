@@ -1,6 +1,8 @@
 ---
 layout: home
 
+titleTemplate: 小楼昨夜听风雨
+
 hero:
   name: 南山小站
   text: 明月松间照 清泉石上流
@@ -14,10 +16,10 @@ hero:
       link: https://github.com/yinchengnuo/yinchengnuo.com
     - theme: alt
       text: GitLab
-      link: /
+      link: https://gitlab.yinchengnuo.com/
     - theme: alt
       text: Jenkins
-      link: /
+      link: https://jenkins.yinchengnuo.com/
     - theme: alt
       text: RabbitMQ
       link: /
