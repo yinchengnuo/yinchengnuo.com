@@ -16,6 +16,22 @@ curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
 ```
 
+3. 可能遇到问题
+
+```sh
+Public key for docker-ce-19.03.6-3.el7.x86_64.rpm is not installed
+```
+
+解决方法：
+
+```sh
+wget https://get.docker.com/gpg
+```
+
+```sh
+rpmkeys --import ./gpg
+```
+
 ## 磁盘空间、日志、Volume 清理
 
 ### 查看当前 docker 使用的磁盘情况
