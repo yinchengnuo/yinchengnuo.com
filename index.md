@@ -32,7 +32,7 @@ hero:
 
 features:
   - icon: 👩🏻‍🌾
-    title: 种豆南山下，草盛豆苗稀12313123。
+    title: 种豆南山下，草盛豆苗稀。
     details: 晨兴理荒秽，带月荷锄归。
   - icon: 🌝
     title: 暮从碧山下，山月随人归。
