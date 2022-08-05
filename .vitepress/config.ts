@@ -2,7 +2,7 @@
  * @Author: 尹成诺
  * @Date: 2022-07-11 17:03:09
  * @LastEditors: 尹成诺
- * @LastEditTime: 2022-08-03 18:16:07
+ * @LastEditTime: 2022-08-04 16:26:45
  * @Description: file content
  */
 // import nav from "./nav";
@@ -12,7 +12,9 @@ import { defineConfig, DefaultTheme } from "vitepress";
 
 const modules = ["01_前端", "02_后端", "03_运维", "04_数据库"];
 
-const links = glob.sync("**/*.md").filter((path: string) => modules.some((module) => path.startsWith(module))) as Array<string>;
+const globs = glob.sync("**/*.md", { ignore: "node_modules/**/*.md" });
+
+const links = globs.filter((path: string) => modules.some((module) => path.startsWith(module))) as Array<string>;
 
 const nav: Array<DefaultTheme.NavItem> = [];
 const sidebar: DefaultTheme.Sidebar = {};
@@ -30,6 +32,7 @@ links.forEach((link: string) => {
   const names1 = paths[1].split("_");
   const names2 = paths[2].split("_");
   sidebar[`/${paths[0]}/`][+names1[0] - 1].items[+names2[0] - 1] = { text: names2[1], link: `/${link}` };
+  sidebar[`/${paths[0]}/`][+names1[0] - 1].items = sidebar[`/${paths[0]}/`][+names1[0] - 1].items.filter((e) => e);
 });
 
 Object.entries(sidebar).forEach(([key, value]: [string, DefaultTheme.SidebarGroup[]]) => {
@@ -63,10 +66,7 @@ export default defineConfig({
       {
         text: "我的应用",
         activeMatch: "^/00_我的应用/",
-        items: [
-          { text: "滚动君小程序", link: "/00_我的应用/01_滚动君小程序/index.md" },
-          { text: "青柠直播微信小程序", link: "/00_我的应用/02_青柠直播微信小程序/index.md" },
-        ],
+        items: globs.filter((path: string) => path.startsWith("00_我的应用")).map((path) => ({ text: path.split("/")[1].replace(/^\d+_/, ""), link: `/${path}` })),
       },
       ...nav,
       {
@@ -91,7 +91,7 @@ export default defineConfig({
           { text: "localhost https 证书", link: "https://letsencrypt.org/zh-cn/docs/certificates-for-localhost/" },
         ],
       },
-      { text: "关于", link: "/关于/index" },
+      { text: "关于", link: "/05_关于/index.md" },
     ],
     sidebar,
   },

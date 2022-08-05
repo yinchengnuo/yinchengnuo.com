@@ -10,7 +10,7 @@ hero:
   actions:
     - theme: brand
       text: Me
-      link: https://github.com/yinchengnuo
+      link: 05_关于/index
     - theme: alt
       text: github
       link: https://github.com/yinchengnuo/yinchengnuo.com
