@@ -11,7 +11,7 @@
 
 如下图，大多数名字 QQ 浏览器的进程都是我打开的一个个 tab 页面。如果你在浏览器新打开一个页面，浏览器就会多一个进程，反之减少一个。
 
-<div style="text-align:center;display: flex;justify-content: center;">
+<div style="display: flex;justify-content: center;">
 <img src="https://img-blog.csdnimg.cn/20190405232900698.png">
 </div>
 
@@ -51,7 +51,7 @@
 - 在 XMLHttpRequest 在连接后是通过浏览器新开一个线程请求。
 - 将检测到状态变更时，如果设置有回调函数，异步线程就产生状态变更事件，将这个回调再放入事件队列中。再由 JavaScript 引擎执行。
 
-<div style="text-align:center;display: flex;justify-content: center;">
+<div style="display: flex;justify-content: center;">
 <img src="https://img-blog.csdnimg.cn/201904041911010.png">
 </div>
 
@@ -70,7 +70,7 @@
 
 这里绘一张简单的图：（很简化）
 
-<div style="text-align:center;display: flex;justify-content: center;">
+<div style="display: flex;justify-content: center;">
 <img src="https://img-blog.csdnimg.cn/20190404191314544.png">
 </div>
 
@@ -94,7 +94,7 @@
 
 具体过程如下图：
 
-<div style="text-align:center;display: flex;justify-content: center;">
+<div style="display: flex;justify-content: center;">
 <img src="https://img-blog.csdnimg.cn/20190404191512139.png">
 </div>
 
@@ -145,13 +145,13 @@
 
 如图：
 
-<div style="text-align:center;display: flex;justify-content: center;">
+<div style="display: flex;justify-content: center;">
 <img src="https://img-blog.csdnimg.cn/20190404191937958.png">
 </div>
 
 事件循环机制进一步补充,如图：
 
-<div style="text-align:center;display: flex;justify-content: center;">
+<div style="display: flex;justify-content: center;">
 <img src="https://img-blog.csdnimg.cn/20190404192009845.png">
 </div>
 
@@ -258,7 +258,7 @@ console.log("script end");
 
 如图：
 
-<div style="text-align:center;display: flex;justify-content: center;">
+<div style="display: flex;justify-content: center;">
 <img src="https://img-blog.csdnimg.cn/20190404193633211.png">
 </div>
 

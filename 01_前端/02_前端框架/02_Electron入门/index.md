@@ -32,7 +32,7 @@ yarn && yarn start
 
 此时，你就会看到一个带着 Hello World 的窗口，这就是 Electron:
 
-<img src="/img/web/20211120105535.jpg">
+<!-- <img src="/img/web/20211120105535.jpg"> -->
 
 ## 进入 Electron
 
@@ -383,7 +383,7 @@ BrowserWindow 渲染进程的特征：
 
 app 主进程 和 BrowserWindow 进程的不同：
 
-<img src="/img/web/20211120150246.jpg">
+<!-- <img src="/img/web/20211120150246.jpg"> -->
 
 上面我们说到一个 app 可以有多个 BrowserWindow。但是实际上我们很少用到有多个 BrowserWindow 的场景。
 
@@ -403,7 +403,7 @@ mainWindow.loadURL("https://localhost:3000");
 
 这里使用 [yapiresponsetransformtotypescriptinterface](http://10.106.11.64/yinchengnuo/yapiresponsetransformtotypescriptinterface) 作为基础集成 Electron 开发环境。
 
-vite 项目启动时在 https://localhost:3000 ，构建后在 dist 目录下生成静态资源。
+vite 项目启动时在 `https://localhost:3000` ，构建后在 dist 目录下生成静态资源。
 
 在开发环境使用：
 

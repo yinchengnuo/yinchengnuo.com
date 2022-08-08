@@ -2,7 +2,7 @@
  * @Author: 尹成诺
  * @Date: 2022-07-11 17:03:09
  * @LastEditors: 尹成诺
- * @LastEditTime: 2022-08-04 16:26:45
+ * @LastEditTime: 2022-08-08 23:22:24
  * @Description: file content
  */
 // import nav from "./nav";
@@ -50,7 +50,7 @@ export default defineConfig({
   },
   themeConfig: {
     siteTitle: "小楼昨夜听风雨",
-    outlineTitle: "文档大纲",
+    outlineTitle: "大纲",
     lastUpdatedText: "最近更新时间",
     editLink: {
       pattern: "https://github.com/yinchengnuo/yinchengnuo.com/blob/master/:path",

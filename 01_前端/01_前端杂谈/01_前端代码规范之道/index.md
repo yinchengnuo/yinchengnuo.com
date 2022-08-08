@@ -827,6 +827,7 @@ npx husky add .husky/pre-commit "npx lint-staged"
 }
 ```
 
-[代码地址](https://github.com/yinchengnuo/FrontEndCodeSpecification)
+## 示例代码
 
-完！
+[https://github.com/yinchengnuo/FrontEndCodeSpecification](https://github.com/yinchengnuo/FrontEndCodeSpecification)
+

@@ -29,6 +29,9 @@ hero:
     - theme: alt
       text: K8S
       link: /
+    - theme: alt
+      text: Harbor
+      link: /
 
 features:
   - icon: 👩🏻‍🌾
