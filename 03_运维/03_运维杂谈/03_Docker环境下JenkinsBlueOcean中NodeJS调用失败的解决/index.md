@@ -1,3 +1,0 @@
-# Docker环境下JenkinsBlueOcean中NodeJS调用失败的解决
-
-Docker环境下JenkinsBlueOcean中NodeJS调用失败的解决...
