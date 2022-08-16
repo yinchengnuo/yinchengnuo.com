@@ -32,6 +32,12 @@ hero:
     - theme: alt
       text: Harbor
       link: /
+    - theme: alt
+      text: Gogs
+      link: /
+    - theme: alt
+      text: NPM
+      link: /
 
 features:
   - icon: 👩🏻‍🌾

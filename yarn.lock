@@ -631,3 +631,8 @@
   "integrity" "sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ=="
   "resolved" "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz"
   "version" "1.0.2"
+
+"yinchengnuotesttest@^1.0.0":
+  "integrity" "sha512-JfDLdvJmv3v24/rwOqQ4KOqZ+ldL2N0l8uzfK40VI94W+NF4lhlZxAB0eAT7/8U0idWrZnGPDI0M0mNZGHMh0w=="
+  "resolved" "https://npm.yinchengnuo.com/yinchengnuotesttest/-/yinchengnuotesttest-1.0.0.tgz"
+  "version" "1.0.0"
